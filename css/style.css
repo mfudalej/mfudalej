@@ -27,10 +27,11 @@ a.button-link:before {
   display: block;
   content: '';
   background-color: #f5aa95;
+  /* -webkit-transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+  /* transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
   -webkit-transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
   z-index: 1; }
 
 a.button-link i {
@@ -42,14 +43,15 @@ a.button-link i {
   display: inline-block;
   padding: 0px 0px 0px 10px;
   margin: 0;
-  background-image: url("/src/images/arrow.png");
+  background-image: url("../images/arrow.png");
   background-size: 5px 8px;
   background-repeat: no-repeat;
   background-position: center right;
+  /* -webkit-transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+  /* transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
   -webkit-transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* transition: left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
   z-index: 1; }
 
 a.button-link:hover:before {
@@ -61,10 +63,11 @@ a.button-link:hover i {
 .social-button a span {
   color: #000000;
   font-size: 2.4rem;
+  /* -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+  /* transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
   -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  /* transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */ }
 
 .social-button a span:hover {
   color: #f5aa95; }
@@ -76,84 +79,65 @@ a.button-link:hover i {
   display: inline-block; }
   .socialBotomButton a span {
     -webkit-transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -o-transition: all 300ms linear;
-    -ms-transition: all 300ms linear;
     transition: all 300ms linear;
     color: #000000;
     display: inline-block; }
 
 .socialBotomButton a span:hover {
   -webkit-animation: tadam 1s forwards;
-  -moz-animation: tadam 1s forwards;
-  animation: tadam 1s forwards; }
+          animation: tadam 1s forwards; }
 
 @-webkit-keyframes tadam {
   0% {
-    -webkit-transform: scale(1); }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   10%, 20% {
-    -webkit-transform: scale(0.9) rotate(-3deg); }
+    -webkit-transform: scale(0.9) rotate(-3deg);
+            transform: scale(0.9) rotate(-3deg); }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale(1.1) rotate(3deg); }
+    -webkit-transform: scale(1.1) rotate(3deg);
+            transform: scale(1.1) rotate(3deg); }
   40%, 60%, 80% {
-    -webkit-transform: scale(1.1) rotate(-3deg); }
+    -webkit-transform: scale(1.1) rotate(-3deg);
+            transform: scale(1.1) rotate(-3deg); }
   100% {
-    -webkit-transform: scale(1) rotate(0); } }
-
-@-moz-keyframes tadam {
-  0% {
-    -moz-transform: scale(1); }
-  10%, 20% {
-    -moz-transform: scale(0.9) rotate(-3deg); }
-  30%, 50%, 70%, 90% {
-    -moz-transform: scale(1.1) rotate(3deg); }
-  40%, 60%, 80% {
-    -moz-transform: scale(1.1) rotate(-3deg); }
-  100% {
-    -moz-transform: scale(1) rotate(0); } }
-
-@-o-keyframes tadam {
-  0% {
-    -o-transform: scale(1); }
-  10%, 20% {
-    -o-transform: scale(0.9) rotate(-3deg); }
-  30%, 50%, 70%, 90% {
-    -o-transform: scale(1.1) rotate(3deg); }
-  40%, 60%, 80% {
-    -o-transform: scale(1.1) rotate(-3deg); }
-  100% {
-    -o-transform: scale(1) rotate(0); } }
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0); } }
 
 @keyframes tadam {
   0% {
-    transform: scale(1); }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   10%, 20% {
-    transform: scale(0.9) rotate(-3deg); }
+    -webkit-transform: scale(0.9) rotate(-3deg);
+            transform: scale(0.9) rotate(-3deg); }
   30%, 50%, 70%, 90% {
-    transform: scale(1.1) rotate(3deg); }
+    -webkit-transform: scale(1.1) rotate(3deg);
+            transform: scale(1.1) rotate(3deg); }
   40%, 60%, 80% {
-    transform: scale(1.1) rotate(-3deg); }
+    -webkit-transform: scale(1.1) rotate(-3deg);
+            transform: scale(1.1) rotate(-3deg); }
   100% {
-    transform: scale(1) rotate(0); } }
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0); } }
 
 .backToTop {
   position: absolute;
   right: 20px;
-  margin-top: -45px; }
+  margin-top: -45px;
+  height: 40px;
+  width: 40px; }
   .backToTop img {
-    width: 40px;
-    height: 40px; }
+    width: 100%; }
 
 .backToTop:hover {
   -webkit-animation: tadam 1s forwards;
-  -moz-animation: tadam 1s forwards;
-  animation: tadam 1s forwards; }
+          animation: tadam 1s forwards; }
 
 .top-navigation .top-menu {
   list-style: none;
   text-align: center;
-  padding: 0;
-  width: 100%; }
+  padding: 0; }
   .top-navigation .top-menu li {
     background-color: #000000;
     display: inline-block;
@@ -230,7 +214,10 @@ a.button-link:hover i {
   .top-navigation {
     background-color: #000000;
     height: 5vh;
-    min-height: 50px; }
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 3; }
     .top-navigation .top-menu {
       width: 75%;
       float: right;
@@ -251,9 +238,7 @@ a.button-link:hover i {
           line-height: 50px;
           font-weight: 600;
           -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+          transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
       .top-navigation .top-menu li:last-child a {
         border: 0; }
       .top-navigation .top-menu li:hover a {
@@ -378,10 +363,41 @@ header {
     header .home h4 {
       color: #f5aa95;
       font-weight: 400; }
+    header .home h3 {
+      min-height: 234px; }
+      header .home h3 .typed-cursor {
+        opacity: 1;
+        font-weight: 100;
+        -webkit-animation: blink 0.7s infinite;
+                animation: blink 0.7s infinite; }
+
+@-keyframes blink {
+  header .home h3 0% {
+    opacity: 1; }
+  header .home h3 50% {
+    opacity: 0; }
+  header .home h3 100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      header .home h3 .typed-fade-out {
+        opacity: 0;
+        -webkit-animation: 0;
+                animation: 0;
+        -webkit-transition: opacity .25s;
+        transition: opacity .25s; }
   header .social-top {
     display: none; }
 
 @media screen and (min-height: 600px) {
+  header .home .h3 {
+    min-height: 92px; }
   header .social-top {
     position: absolute;
     bottom: 2vh;
@@ -395,10 +411,16 @@ header {
         display: inline;
         margin-right: 20px; } }
 
-.about .container h4 {
-  margin-left: 20%;
-  padding-top: 15%;
-  margin-bottom: 10%; }
+.about {
+  padding-top: 1vh; }
+  .about .container h4 {
+    margin-left: 20%;
+    padding-top: 15%;
+    margin-bottom: 10%; }
+
+@media only screen and (min-width: 640px) {
+  .about {
+    padding-top: 1vh; } }
 
 .skills .container .smallTitle {
   margin-top: 15%; }
@@ -413,22 +435,21 @@ header {
   text-align: center; }
 
 @media screen and (min-width: 550px) {
-  .skills .container .row div {
-    width: 22%;
-    font-family: 'icomoon';
-    font-size: 10rem;
-    text-align: center;
-    -moz-transition: all 0.7s ease;
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease; }
-  .skills .container .row div:hover {
-    color: #f5aa95;
-    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    cursor: default; } }
+  .skills {
+    padding-top: 1vh; }
+    .skills .container .row div {
+      width: 22%;
+      font-family: 'icomoon';
+      font-size: 10rem;
+      text-align: center;
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease; }
+    .skills .container .row div:hover {
+      color: #f5aa95;
+      text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      cursor: default; } }
 
 .works .smallTitle {
   margin-top: 15%; }
@@ -457,21 +478,25 @@ header {
     font-size: 2.4rem;
     letter-spacing: 3px;
     color: #000000;
+    -webkit-transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 .works a:hover img {
-  transform: scale(1.05); }
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
 
 .works a:hover h5 {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   color: #f5aa95; }
 
 @media screen and (min-width: 550px) {
-  .works .cuda {
-    margin-top: 33%; } }
+  .works {
+    padding-top: 1vh; }
+    .works .cuda {
+      margin-top: 33%; } }
 
 .contact {
   margin-bottom: 1%; }
